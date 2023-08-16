@@ -1,0 +1,151 @@
+/* Default styles */
+
+/* Styles for screens up to 768px wide */
+@media (max-width: 768px) {
+    .navbar {
+      font-size: 8px; /* Reduce font size */
+    }
+    .navbar a{
+        font-size: 10px; /* Reduce font size */
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 2px;
+      }
+
+    .social-icons a{
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .nav-links {
+        font-size: 10px; /* Reduce font size */
+        margin-top: 1PX;
+    }
+    .nav-links a {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .abc li a {
+        
+        color: white;
+        float: left;
+        margin-right: 30px;
+        
+      }
+      .nav-links li a{
+        font-size: 8px;
+        font-family: 'Pacifico', cursive;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 8px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        padding: 10px 10px;
+        cursor: pointer;
+      }
+      /* Make the dropdown buttons full width for better touch interaction */
+      .dropdown-content {
+        width: 100%;
+      }
+    
+      /* Center align the text in the dropdown links */
+      .dropdown-content a {
+        text-align: left;
+      }
+    
+    .title-text {
+      font-size: 24px; /* Reduce font size */
+      text-align: center; /* Center-align the title */
+    }
+  
+    .subtitle-text {
+      font-size: 16px; /* Reduce font size */
+      text-align: center; /* Center-align the subtitle */
+    }
+    
+    .container {
+        padding: 20px;
+      }
+
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center-align buttons */
+      margin-top: 20px; /* Add spacing */
+    }
+
+    .button-container a.button {
+        margin: 5px 0;
+      }
+    
+    .image-row img {
+      width: 100%; /* Make images responsive */
+      height: auto;
+      display: block;
+      margin-bottom: 10px; /* Add spacing between images */
+      margin: 10px auto;
+      max-width: 100%;
+    }
+  
+    .section {
+      padding: 20px 0; /* Add padding to sections for better spacing */
+    }
+  
+    .footer {
+      text-align: center; /* Center-align footer content */
+      font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+    /* Additional styles for specific sections */
+    #northamerica-content p {
+      font-size: 16px;
+    }
+  
+    /* Add other section-specific styles as needed */
+
+}
+
+@media (max-width: 576px) {
+      .navbar {
+        font-size: 12px; /* Further reduce font size */
+      }
+  
+      .navbar {
+        font-size: 12px; /* Further reduce font size */
+      }
+
+      .title-text {
+        font-size: 20px; /* Further reduce font size */
+      }
+  
+      .subtitle-text {
+        font-size: 14px; /* Further reduce font size */
+      }
+  
+      .button-container {
+        margin-top: 15px; /* Adjust spacing between buttons */
+      }
+  
+      .image-row img {
+        margin-bottom: 8px; /* Adjust spacing between images */
+      }
+  
+      .section {
+        padding: 15px; /* Adjust padding for smaller screens */
+      }
+  
+      .footer {
+        font-size: 12px; /* Further reduce font size */
+      }
+  
+      /* Adjust other styles as needed */
+    }
+  
