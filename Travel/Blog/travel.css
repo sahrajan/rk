@@ -31,8 +31,8 @@
     padding: 3px 3px;
     text-decoration: none;
     font-size: 20px;
-    margin-left: 65px;
-    animation: rainbow 5s infinite;
+   
+    /* animation: rainbow 5s infinite; */
   }
 
   /* Change the color of navigation bar links on hover */
@@ -55,11 +55,10 @@
   padding: 2px 0;
   display: flex;
   justify-content: flex-end;
-  /* position: fixed; */
-  top: 22px; 
+  position: fixed; 
   width: 100%;
   z-index: 999;
-  margin-top: 8px;
+  margin-top: 30px;
   text-align: center;
  
   /* Adjust this value as needed */

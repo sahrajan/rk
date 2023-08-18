@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
    
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="../../travel.css">
@@ -218,6 +218,7 @@
 
 
 
+<title>Expandable Table of Contents</title>
 
 
 
@@ -230,6 +231,94 @@
   </h2>
   <div class="line"></div>
 </div>
+
+
+
+
+
+
+
+
+<hr>
+<div class="toc-wrapper">
+  <div class="table-of-contents">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li>
+        <span class="toggle-btn">▼</span>
+        Chapter 1
+        <ul class="sub-menu">
+          <li>Section 1.1</li>
+          <li>Section 1.2</li>
+        </ul>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+
+
+
+    <style>
+    /* Reset default list styles */
+ 
+    .table-of-contents{
+      background: 0 0;
+      list-style: none;
+      line-height: 1.6;
+      margin: 0;
+      overflow: hidden;
+      z-index: 1;
+     background-color: white;
+     border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px; 
+  margin-left: 500px;
+    }
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Style for sub-menu */
+.sub-menu {
+  display: none;
+  margin-left: 15px;
+}
+
+/* Initially show sub-menu when parent is expanded */
+li.expanded .sub-menu {
+  display: block;
+}
+</style>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+  const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      const parentLI = button.parentElement;
+      parentLI.classList.toggle("expanded");
+    });
+  });
+});
+
+
+</script>
+
+
+
+
+
 
 
 <style>
