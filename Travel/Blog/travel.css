@@ -1,14 +1,4 @@
 /************************************* Style sheet for MY PAGE navbar ********************************/
-  /* @keyframes rainbow {
-    0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: blue; }
-    71% { color: indigo; }
-    85% { color: violet; }
-    100% { color: red; } }*/
-
   .navbar {
     background-color: lightskyblue;
     overflow: hidden;
@@ -18,11 +8,8 @@
     top: 0;
     width: 100%;
     z-index: 1000;  
-    position: fixed;
-
   }
 
-  /* Style for the navigation bar links */
   .navbar a {
     float: left;
     display: block;
@@ -31,62 +18,64 @@
     padding: 3px 3px;
     text-decoration: none;
     font-size: 20px;
+    margin-left: 17px;
    
-    /* animation: rainbow 5s infinite; */
   }
 
-  /* Change the color of navigation bar links on hover */
   .navbar a:hover {
     background-color: #ddd;
     color: black;
   }
+/************************************* Style sheet for the Social ICON on the  navbar ********************************/
 
-  /* Remove underline */ 
-  a{
-    text-decoration: none; 
-  }
-        
-/************************************* Style sheet for nav-links bar ********************************/
+.social-icons {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 20px;
+}
+/************************************* Style sheet for nav-links bar & Dropdown Button ********************************/
 
 .nav-links {
-  list-style: none;
-  background-color: lightslategray;
+  background-color: gray;
   color: white;
-  padding: 2px 0;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed; 
-  width: 100%;
-  z-index: 999;
-  margin-top: 30px;
   text-align: center;
- 
-  /* Adjust this value as needed */
-/* Adjust this value as needed */
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;  
+  margin-top: 40px;
+  padding: -2px 0;
+  align-items: center;
 }
 
-.nav-links ul {
-  list-style: none;
-  display: flex;
+.nav-linkss {
+  float: right;
+  margin-top: 10px;
 }
 
-.nav-links li {
-  margin-right:  135px;
-  margin-top: 7px;
+.nav-links .travelblog-links {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: black;
-}
-
-.abc li a {
   color: white;
   float: left;
-  margin-right: 620px;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 20px;
+  
 }
-      
+
 .nav-links li a{
   font-size: 20px;
   font-family: 'Pacifico', cursive;
@@ -94,14 +83,12 @@
 
 /***************************** Style sheet for Dropdown menu on nav-links bar dropdown **************************/
 
-  /* Style for the dropdown container */
   .dropdown {
     float: left;
     overflow: hidden;
     position: static;
   }
 
-  /* Style for the dropdown button */
   .dropdown .dropbtn {
     font-size: 15px;
     border: none;
@@ -110,9 +97,9 @@
     background-color: inherit;
     padding: 14px 16px;
     cursor: pointer;
+    margin-top: 0px;
   }
 
-  /* Style for the dropdown content */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -123,7 +110,6 @@
     font-size: 14px;
   }
 
-  /* Style for the dropdown links */
   .dropdown-content a {
     float: none;
     color: black;
@@ -133,46 +119,27 @@
     text-align: left;
   }
 
-  /* Change the color of dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
 
-  /* Show the dropdown content when hovering over the dropdown button */
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-/************************************* Style sheet for the Social ICON on the  navbar ********************************/
-
-  /* Style for social media icons */
-  .social-icons {
-    float: right;
-    margin-right: 20px;
-    margin-top: 5px;
-  }
-
-  /* Style for individual social media icons */
-  .social-icons a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 20px;
-  }
-
+ 
 /************************************* Style sheet for Button On the Travel Blog ********************************/
 
   .button {
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: white;
     color: black;
     text-decoration: none;
     margin: 0 10px;
-    border: 1px solid black;
+    border: 2px solid blue;
     font-size: 16px; /* Adjusted font size */
     width: 150px; /* Adjusted button width */
     text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s, color 0.3s;
   }
  
   .button-container {
@@ -184,6 +151,7 @@
   .button:hover {
     background-color: black; 
     color: white; 
+    text-decoration: none;
   }
 
 /************************************* Style sheet for ********************************/
@@ -205,10 +173,6 @@
 
 /************************************* Style sheet for Image row & Text ********************************/
 
- 
-
-
-/* Styling for images */
 .image-container a{
     display: flex;
     justify-content: space-around;
@@ -219,18 +183,19 @@
     width: 30%;
     cursor: pointer;
 }
-/* Styling for the unique font and design */
+
 .title-section {
   text-align: center;
   margin-top: 80px;
 }
 
 .title-text {
-  font-family: 'Pacifico', cursive; /* Use a Google Font or custom font */
+  font-family: 'Pacifico', cursive; 
   font-size: 60px;
-  color: white; /* Unique color */
+  color: white; 
   letter-spacing: 2px;
   text-transform: uppercase;
+  float: inline-end;
 }
 
 .subtitle-text {
@@ -250,20 +215,13 @@
     padding: 10px 20px;
   }
 
-
-  /* Style for the container */
-  .container {
-    position: relative;
-    width: 100%;
+  .travel-image {
+    margin-top: 150px;
+    max-width: 100%;
     height: 100vh;
-
-    /* Replace with the path to your image */
-    background-image: url('../Image/NorthAmerica/nabg.jpg'); 
-    /* Replace with the path to your image */
-    
-    background-size: cover;
-    background-position: center;
-  }
+    margin: 0 auto; 
+    display: block;
+}
 /************************************* Style sheet for NORTH AMERICA in TRAVELBLOG ********************************/
 
 .liberty {
@@ -472,7 +430,6 @@ margin-right: 150px;
   left: 0;
   width: 100%;
   background-color: #f5f5f5;
-
   font-size: 20px;
   
 }
@@ -691,3 +648,176 @@ margin-right: 150px;
   border-radius: 5px;
   font-size: 14px;
 }
+
+
+
+
+.table-of-contents{
+           
+background: 0 0;
+list-style: none;
+line-height: 1.6;
+overflow: hidden;
+z-index: 1;
+background-color: white;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+max-width: 1123px; 
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  margin-top: 15px;
+
+}
+
+ul, li {
+list-style: none;
+padding: 0;
+margin: 0;
+
+}
+.table-of-contents li a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* Style for the toggle button */
+.toggle-btn {
+cursor: pointer;
+margin-right: 5px;
+font-size: 25px;
+}
+.bi-card-list, .bi-sort-down{
+  font-size: 22px;
+
+}
+.toggle-btn1 {
+  cursor: pointer;
+
+  }
+
+/* Style for sub-menu */
+.sub-menu{
+display: none;
+
+}
+
+/* Initially show sub-menu when parent is expanded */
+li.expanded .sub-menu {
+display: block;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  gap: 10px; /* Gap between grid items */
+  list-style: none;
+  padding: 0;
+}
+
+.grid-container li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.toggle-btn {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.sub-menu {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+
+
+
+/* styles.css */
+
+
+.details-about-page {
+  max-width: 1120px;
+  margin: 2px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-about-page p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 10px 0;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.details-about-page p:first-child {
+  border-top: 2px solid #e6e6e6;
+  padding-top: 0;
+}
+
+.details-about-page p:last-child {
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 0;
+}
+
+
+/* Navbar Light Visible */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0.7;
+  display: none;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.navbar.light-visible {
+            background-color: rgb(170, 185, 172); /* Change this to your desired light color and opacity */
+            box-shadow: 0px 2px 4px rgba(48, 40, 40, 0.1); /* Optional: Add a shadow effect */
+          color: brown;
+          }
+
+          .nav-links.light-visible {
+    background-color: rgba(170, 164, 167, 0.9); /* Change this to your desired light color and opacity */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  }
+
+
+  
+/************************************* Style sheet for neoalvisit.html ********************************/
+  .container-col {
+    max-width: 1200px; /* Set the maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Add some negative margin to offset the padding */
+  }
+  
+  .custom-col {
+    flex-basis: calc(25% - 30px); /* Adjust the width of each column */
+    padding: 0 15px; /* Add some padding to each column */
+  }
