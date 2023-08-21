@@ -1,0 +1,76 @@
+@media (max-width: 576px) {
+    #main {
+      overflow: visible !important;
+      align-items: center;
+      margin-top: 30px;
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
+    .main {
+      border: 5px;
+    }
+    
+    /* Style for the content container */
+    #content {
+      overflow: visible !important;
+    }
+    
+    /* Style for the article container */
+    .article-inner {
+      overflow: visible !important;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Example box shadow */
+      border: #888;
+     
+    }
+    
+    /* Style for the entry title */
+    .entry-title {
+      font-size: 24px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+    /* Style for the entry meta information */
+    .entry-meta {
+      font-size: 16px;
+      color: #888;
+      text-align: center;
+    }
+    
+    /* Style for the entry image */
+    .entry-image img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    
+    /* Style for the badge */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 50%;
+    }
+    
+    /* Style for the entry content */
+    .entry-content {
+      overflow: visible !important;
+      margin: 20px 20px 0px 20px;
+    }
+    
+    /* Style for the hr separator */
+    .wp-block-separator {
+      margin: 20px 0;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
+    
+    .entry-category{
+      font-size: large;
+      text-align: center;
+    }}
