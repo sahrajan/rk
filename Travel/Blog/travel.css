@@ -7,6 +7,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 40px;
     z-index: 1000;  
   }
 
@@ -807,17 +808,222 @@ display: block;
   
 /************************************* Style sheet for neoalvisit.html ********************************/
   .container-col {
-    max-width: 1200px; /* Set the maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px;
+    margin: 0 auto; 
   }
   
   .custom-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px; /* Add some negative margin to offset the padding */
+    margin: 0 -15px; 
   }
   
   .custom-col {
-    flex-basis: calc(25% - 30px); /* Adjust the width of each column */
-    padding: 0 15px; /* Add some padding to each column */
+    flex-basis: calc(25% - 30px);
+    padding: 0 15px;
   }
+
+/************************************* Style sheet for Visitpage ********************************/
+
+  #main {
+    overflow: visible !important;
+    align-items: center;
+    margin-top: 105px;
+    margin-right: 130px;
+    margin-left: 120px;
+    
+  }
+  .main {
+    border: 5px;
+  }
+  
+  /* Style for the content container */
+  #content {
+    overflow: visible !important;
+  }
+  
+  /* Style for the article container */
+  .article-inner {
+    overflow: visible !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Example box shadow */
+    border: #888;
+   
+  }
+  
+  /* Style for the entry title */
+  .entry-title {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Style for the entry meta information */
+  .entry-meta {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* Style for the entry image */
+  .entry-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Style for the badge */
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  /* Style for the entry content */
+  .entry-content {
+    overflow: visible !important;
+    margin: 20px 20px 0px 20px;
+  }
+  
+  /* Style for the hr separator */
+  .wp-block-separator {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .image-row-visitpage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: -100px;
+  
+  }
+
+  .entry-category{
+    font-size: large;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nepal-province a{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    font-style: italic;
+    color: blue;
+  }
+  
+  .nepal-province{
+    text-align: center;
+  }
+
+  .madhesh{
+background-color: yellowgreen;
+  }
+  .hr-header{
+   margin-right: 150px;
+   margin-left: 150px;
+   
+  }
+  .hr-head{
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+  }
+
+  .paragraph-visitpage{
+    margin: 0px 20px 10px 20px; /*  top right bottom left */
+  
+    text-align: auto;
+  }
+  
+
+@media (max-width: 576px) {
+  #main {
+    overflow: visible !important;
+    align-items: center;
+  
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  }
+  .main {
+    border: 2px;
+   
+  }
+  
+  /* Style for the content container */
+  #content {
+    overflow: visible !important;
+    margin-top: 80px;
+  }
+  
+  /* Style for the article container */
+  .article-inner {
+    overflow: visible !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Example box shadow */
+    border: #888;
+   
+  }
+  
+  /* Style for the entry title */
+  .entry-title {
+    font-size: 12px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Style for the entry meta information */
+  .entry-meta {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* Style for the entry image */
+  .entry-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Style for the badge */
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  /* Style for the entry content */
+  .entry-content {
+    overflow: visible !important;
+    margin: 20px 20px 0px 20px;
+  }
+  
+  /* Style for the hr separator */
+  .wp-block-separator {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .entry-category {
+   
+    text-align: center;
+   
+  }
+
+
+}
