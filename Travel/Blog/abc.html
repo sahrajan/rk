@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .pagination li {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <!-- Add more items here -->
+    </div>
+
+    <ul class="pagination">
+        <li><a href="#" id="prev">Previous</a></li>
+        <li><a href="#" class="page">1</a></li>
+        <li><a href="#" class="page">2</a></li>
+        <li><a href="#" class="page">3</a></li>
+        <li><a href="#" class="page">4</a></li>
+        <li><a href="#" class="page">5</a></li>
+        <li><a href="#" id="next">Next</a></li>
+    </ul>
+
+    <script>
+        const content = document.querySelector('.content');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const pageLinks = document.querySelectorAll('.page');
+
+        const itemsPerPage = 5; // Number of items per page
+        let currentPage = 1; // Current page
+
+        // Function to display content for the current page
+        function showPage(pageNumber) {
+            // Calculate the range of items to display
+            const startIndex = (pageNumber - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+
+            // Hide all content items
+            const allItems = content.querySelectorAll('.item');
+            allItems.forEach((item) => {
+                item.style.display = 'none';
+            });
+
+            // Display items for the current page
+            const itemsToShow = Array.from(allItems).slice(startIndex, endIndex);
+            itemsToShow.forEach((item) => {
+                item.style.display = 'block';
+            });
+        }
+
+        // Event listener for previous button
+        prevButton.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        // Event listener for next button
+        nextButton.addEventListener('click', () => {
+            if (currentPage < pageLinks.length) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        // Event listener for page number links
+        pageLinks.forEach((pageLink) => {
+            pageLink.addEventListener('click', () => {
+                currentPage = parseInt(pageLink.textContent);
+                showPage(currentPage);
+            });
+        });
+
+        // Initial page display
+        showPage(currentPage);
+    </script>
+</body>
+</html>
