@@ -1,110 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Columns with Gap</title>
+    <style>
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* First column (80% width) */
+        .column-1 {
+            flex: 8;
+            background-color: #ccc; /* Just for visualization */
+            padding: 10px;
+        }
+
+        /* Add a 10px gap between columns */
+        .gap {
+            width: 10px;
+        }
+
+        /* Second column (20% width) */
+        .column-2 {
+            flex: 2;
+            background-color: #f2f2f2; /* Just for visualization */
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-
-	<main id="main" class="" style="overflow: visible !important;">
-
-<div id="content" class="blog-wrapper blog-single page-wrapper" style="overflow: visible !important;">
-	
-
-<div class="row row-large " style="overflow: visible !important;">
-
-	<div class="large-9 col" style="overflow: visible !important;">
-		
-
-
-<article id="post-42911" class="post-42911 post type-post status-publish format-standard has-post-thumbnail hentry category-new-york category-new-york-city-united-states mv-content-wrapper grow-content-body" style="overflow: visible !important;">
-	<div class="article-inner has-shadow box-shadow-1 box-shadow-1-hover" style="overflow: visible !important;">
-		<header class="entry-header">
-	<div class="entry-header-text entry-header-text-top text-center">
-		<h6 class="entry-category is-xsmall"><a href="https://www.dominicanabroad.com/category/united-states/new-york/" rel="category tag">New York</a>, <a href="https://www.dominicanabroad.com/category/united-states/new-york/new-york-city-united-states/" rel="category tag">New York City</a></h6><h1 class="entry-title">24 Beautiful Things to Do in NYC in November + Hidden Gems &amp; Events</h1><div class="entry-divider is-divider small"></div>
-	<div class="entry-meta uppercase is-xsmall">
-		<span class="posted-on">Updated on <a href="https://www.dominicanabroad.com/things-to-do-in-new-york-in-november-nyc/" rel="bookmark"><time class="entry-date date-published date-updated published updated" datetime="2023-08-20T00:58:51-04:00">August 20, 2023</time></a></span><span class="byline"> by <span class="meta-author vcard"><a class="url fn n" href="https://www.dominicanabroad.com/author/alisonfay/">Dominican Abroad</a></span></span>	</div>
-	</div>
-						<div class="entry-image relative">
-				<a href="https://www.dominicanabroad.com/things-to-do-in-new-york-in-november-nyc/">
-    <img width="1220" height="681" src="../../../Image/NorthAmerica/USA/Liberty2.jpeg" class="attachment-large size-large wp-post-image" alt="" decoding="async"  sizes="(max-width: 120px) 100vw, 120px"></a>
-				<div class="badge absolute top post-date badge-circle">
-	<div class="badge-inner">
-		<span class="post-date-day">20</span><br>
-		<span class="post-date-month is-small">Aug</span>
-	</div>
-</div>
-			</div>
-			</header>
-		<div class="entry-content single-page" data-content-ads-inserted="true" style="overflow: visible !important;">
-
-	<span id="dpsp-post-content-markup" data-image-pin-it="true"></span>
-<p>New York City in November is the perfect time to visit. The weather is crisp, there’s vibrant foliage, and the holidays are just beginning. In November, NYC events take over the city, from marathons and film festivals to holiday parades. With comfortable temperatures and fewer crowds, you can’t go wrong with a trip to NYC in November. Here are our favorite activities to add to your bucket list!</p>
-
-
-
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-
-<style>/* Style for the main container */
-#main {
-  overflow: visible !important;
-  align-items: center;
-  margin-top: 30px;
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-/* Style for the content container */
-#content {
-  overflow: visible !important;
-}
-
-/* Style for the article container */
-.article-inner {
-  overflow: visible !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Example box shadow */
- 
-}
-
-/* Style for the entry title */
-.entry-title {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-/* Style for the entry meta information */
-.entry-meta {
-  font-size: 12px;
-  color: #888;
-}
-
-/* Style for the entry image */
-.entry-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Style for the badge */
-.badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ff0000;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 50%;
-}
-
-/* Style for the entry content */
-.entry-content {
-  overflow: visible !important;
-}
-
-/* Style for the hr separator */
-.wp-block-separator {
-  margin: 20px 0;
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-}
-</style>
+    <div class="container">
+        <div class="column-1">
+            <!-- Content for the first column -->
+            <h2>Column 1 (80% Width)</h2>
+            <p>This column has 80% width.</p>
+        </div>
+        <div class="gap"></div> <!-- Gap between columns -->
+        <div class="column-2">
+            <!-- Content for the second column -->
+            <h2>Column 2 (20% Width)</h2>
+            <p>This column has 20% width.</p>
+        </div>
+    </div>
+</body>
 </html>
