@@ -179,7 +179,8 @@
     margin-top: 20px;
 }
 
-.image-container img {
+.image-container 
+ {
     width: 30%;
     cursor: pointer;
 }
@@ -216,10 +217,12 @@
   }
 
   .travel-image {
-    margin-top: 150px;
-    max-width: 100%;
+    margin-top: 100px;
+    margin-left: -70px;
+    width: 1430px;
     height: 100vh;
-    margin: 0 auto; 
+
+   
     display: block;
 }
 /************************************* Style sheet for NORTH AMERICA in TRAVELBLOG ********************************/
