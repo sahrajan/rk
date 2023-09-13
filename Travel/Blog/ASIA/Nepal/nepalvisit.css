@@ -1,0 +1,110 @@
+
+  /* Container styles */
+  .container-side {
+      display: flex;
+      margin-top: 110px;
+      
+  }
+
+  /* First column (80% width) */
+  .column-side-left {
+      
+      background-color:lightgray; /* Just for visualization */
+      padding: 10px;
+      margin-left: 20px;
+      max-width: 1100px;
+      border: 2px solid rgb(60, 46, 48);
+  }
+
+  /* Add a 10px gap between columns */
+  .gap {
+      width: 20px;
+  }
+
+  /* Second column (20% width) */
+  .column-side-right {
+      margin-right: 20px;
+      background-color: linen; /* Just for visualization */
+      padding: 10px;
+      border: 2px solid rgb(23, 27, 29);
+      width: 600px;
+      justify-content: space-between;
+    
+  }
+
+  .column-side-rightu {
+      margin-right: 10px;
+      margin-bottom: 20px;
+      background-color: linen; /* Just for visualization */
+      padding: 10px;
+      border: 2px solid rgb(23, 27, 29);
+      height: 580px;
+      justify-content: space-between;
+  }
+
+
+  .chamelimai{
+    background-color: antiquewhite;
+  }
+
+
+  .jankimandir{
+    background-color: gainsboro;
+  }
+
+
+  body {
+      font-family: Arial, sans-serif;
+  }
+
+  .content {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+  .pagination {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+  }
+
+  .pagination li {
+      margin-right: 10px;
+  }
+
+
+  .nepal-province a{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    font-style: italic;
+    color: blue;
+  }
+  
+  .nepal-province{
+    text-align: center;
+  }
+
+  .madhesh{
+background-color: yellowgreen;
+  }
+  .hr-header{
+   margin-right: 150px;
+   margin-left: 150px;
+   
+  }
+  .hr-head{
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+  }
+    
+       
