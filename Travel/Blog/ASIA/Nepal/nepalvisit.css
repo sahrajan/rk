@@ -12,22 +12,22 @@
       background-color:lightgray; /* Just for visualization */
       padding: 10px;
       margin-left: 20px;
-      width: 1100px;
+      
       border: 2px solid rgb(60, 46, 48);
   }
 
   /* Add a 10px gap between columns */
   .gap {
-      width: 20px;
+      width: 5%;
   }
 
   /* Second column (20% width) */
   .column-side-right {
-      margin-right: 20px;
-      background-color: linen; /* Just for visualization */
+      margin-right: 10px;
+      background-color:aqua; /* Just for visualization */
       padding: 10px;
       border: 2px solid rgb(23, 27, 29);
-      width: 300px;
+      width: 80%;
       justify-content: space-between;
     
   }
