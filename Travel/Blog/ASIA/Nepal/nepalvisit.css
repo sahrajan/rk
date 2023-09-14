@@ -3,6 +3,7 @@
   .container-side {
       display: flex;
       margin-top: 110px;
+      margin-bottom: 20px;
       
   }
 
@@ -11,14 +12,14 @@
       
       background-color:lightgray; /* Just for visualization */
       padding: 10px;
-      margin-left: 20px;
-      
+      margin-left: 10px;
       border: 2px solid rgb(60, 46, 48);
+      width: 1200px;
   }
 
   /* Add a 10px gap between columns */
   .gap {
-      width: 5%;
+      margin-left: 10px;
   }
 
   /* Second column (20% width) */
@@ -27,21 +28,10 @@
       background-color:aqua; /* Just for visualization */
       padding: 10px;
       border: 2px solid rgb(23, 27, 29);
-      width: 100%;
+      width: 300px;
       justify-content: space-between;
     
   }
-
-  .column-side-rightu {
-      margin-right: 10px;
-      margin-bottom: 20px;
-      background-color: linen; /* Just for visualization */
-      padding: 10px;
-      border: 2px solid rgb(23, 27, 29);
-      height: 580px;
-      justify-content: space-between;
-  }
-
 
   .chamelimai{
     background-color: antiquewhite;
