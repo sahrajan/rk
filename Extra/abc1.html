@@ -4,113 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagination Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .content {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .item {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        .pagination {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-
-        .pagination li {
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-        <div class="item">Item 7</div>
-        <div class="item">Item 8</div>
-        <div class="item">Item 9</div>
-        <div class="item">Item 10</div>
-        <!-- Add more items here -->
+    <div class="paginations-list">
+        <!-- Your long list of paginationss here -->
+        <div class="paginations">paginations 1</div>
+        <div class="paginations">paginations 2</div>
+        <!-- ... (many more paginationss) ... -->
+        <div class="paginations">paginations 100</div>
     </div>
 
-    <ul class="pagination">
-        <li><a href="#" id="prev">Previous</a></li>
-        <li><a href="#" class="page">1</a></li>
-        <li><a href="#" class="page">2</a></li>
-        <li><a href="#" class="page">3</a></li>
-        <li><a href="#" class="page">4</a></li>
-        <li><a href="#" class="page">5</a></li>
-        <li><a href="#" id="next">Next</a></li>
-    </ul>
+    <div class="pagination">
+        <ul>
+            
+        </ul>
+    </div>
 
-    <script>
-        const content = document.querySelector('.content');
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        const pageLinks = document.querySelectorAll('.page');
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+    var paginationssPerPage = 1; // Number of paginationss to display per page
+    var $paginationss = $(".paginations-list .paginations"); // Select your paginationss
+    var numpaginationss = $paginationss.length;
+    var numPages = Math.ceil(numpaginationss / paginationssPerPage);
+    var currentPage = 1;
 
-        const itemsPerPage = 5; // Number of items per page
-        let currentPage = 1; // Current page
+    // Generate pagination links
+    var $pagination = $(".pagination ul");
+    $pagination.append("<li class='prev'><a href='#'>Previous</a></li>");
+    for (var i = 1; i <= numPages; i++) {
+        $pagination.append("<li><a href='#'>" + i + "</a></li>");
+    }
+    $pagination.append("<li class='next'><a href='#'>Next</a></li>");
 
-        // Function to display content for the current page
-        function showPage(pageNumber) {
-            // Calculate the range of items to display
-            const startIndex = (pageNumber - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
+    // Show the first page by default
+    showPage(currentPage);
 
-            // Hide all content items
-            const allItems = content.querySelectorAll('.item');
-            allItems.forEach((item) => {
-                item.style.display = 'none';
-            });
-
-            // Display items for the current page
-            const itemsToShow = Array.from(allItems).slice(startIndex, endIndex);
-            itemsToShow.forEach((item) => {
-                item.style.display = 'block';
-            });
-        }
-
-        // Event listener for previous button
-        prevButton.addEventListener('click', () => {
+    // Handle pagination link clicks
+    $pagination.on("click", "a", function (e) {
+        e.preventDefault();
+        var $link = $(this);
+        
+        if ($link.parent().hasClass("prev")) {
+            // Previous button clicked
             if (currentPage > 1) {
                 currentPage--;
                 showPage(currentPage);
             }
-        });
-
-        // Event listener for next button
-        nextButton.addEventListener('click', () => {
-            if (currentPage < pageLinks.length) {
+        } else if ($link.parent().hasClass("next")) {
+            // Next button clicked
+            if (currentPage < numPages) {
                 currentPage++;
                 showPage(currentPage);
             }
-        });
+        } else {
+            // Page number clicked
+            var pageNum = $link.text();
+            showPage(pageNum);
+        }
+    });
 
-        // Event listener for page number links
-        pageLinks.forEach((pageLink) => {
-            pageLink.addEventListener('click', () => {
-                currentPage = parseInt(pageLink.textContent);
-                showPage(currentPage);
-            });
-        });
+    // Function to display the specified page
+    function showPage(pageNum) {
+        $paginationss.hide();
+        var startIndex = (pageNum - 1) * paginationssPerPage;
+        var endIndex = startIndex + paginationssPerPage;
+        $paginationss.slice(startIndex, endIndex).show();
+        
+        // Update active page styling
+        $pagination.find("li").removeClass("active");
+        $pagination.find("li").eq(pageNum).addClass("active");
+    }
+});
 
-        // Initial page display
-        showPage(currentPage);
-    </script>
-</body>
+</script>
+<style>
+    /* Styles for the paginations list */
+.paginations-list {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.paginations {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Styles for pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagination ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+}
+
+.pagination ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style for the active pagination button */
+.pagination ul li.active a {
+    background-color: #333;
+    color: #fff;
+}
+
+</style>
 </html>

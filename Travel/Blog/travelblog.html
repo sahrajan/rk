@@ -25,9 +25,11 @@
  
 
     <div class="navbar">
-      <a href="../../index.html" class="fa fa-home" > MY PAGE</a>
+      
+
+      <a href="../../index.html"><img src="../../assets/img/favicon.png" alt="USA" style="width: 65px; height: 40px;" > PAGE</a>
       <div class="social-icons">
-        <a href="https://www.instagram.com/rajanshah___/" class="fab fa-instagram"></a>
+        <a href="https://www.instagram.com/rajanshah___/" class="fab fa-instagram"></a> 
         <a href="https://www.facebook.com/rk.shah55/" class="fab fa-facebook"></a>
         <a href="https://www.tiktok.com/@r.a.j.a.n_s.h.a.h" class="fab fa-tiktok"></a>
         <a href="mailto:shah-44@hotmail.com" class="far fa-envelope"></a>
@@ -35,7 +37,7 @@
     </div>
 
     <div class="nav-links">
-      <a class="travelblog-links" href="./travelblog1.html" ><i class="bi bi-airplane"></i>  TRAVEL  ABROAD</a>
+      <a class="travelblog-links" href="./travelblog.html" ><i class="bi bi-airplane"></i>  TRAVEL  ABROAD</a>
       <!-- nav-links bar page -->
       <div class="nav-linkss">
           <div class="dropdown">
@@ -151,7 +153,7 @@
     <section id="northamerica-content" class="section">
       
       <div class="image-row">
-      <img src="../Image/NorthAmerica/na-bg.jpeg" alt="USA" style="width: 1320px; height: 400px; border: 4px solid gray" ></div>
+      <img src="../Image/NorthAmerica/na-bg.jpeg" alt="USA" style="width: 1320px; height: 300px; border: 4px solid gray" ></div>
       
     
 
@@ -163,63 +165,110 @@
         
        <section>
       <div class="image-row">
+        
         <div id="usa-content">
 
       <a href="../Blog/NorthAmerica/USA/usa.html"  target="_self" class="unitedstates">
-          <img src="../Image/NorthAmerica/USA.png" alt="USA" style="width: 400px; height: 250px;">
+          <img src="../Image/NorthAmerica/USA.png" alt="USA" style="width: 300px; height: 180px;">
       </a>
     </div>
+    <div>
       <a href="../Blog/NorthAmerica/Canada/canada-main.html" target="_self">
-          <img src="../Image/NorthAmerica/Canada.jpg" alt="New York" style="width: 400px; height: 250px;">
+          <img src="../Image/NorthAmerica/Canada.jpg" alt="New York" style="width: 300px; height: 180px;">
       </a>
+    </div>
+    <div>
       <a href="./plantovisit.html" target="_self">
-          <img src="../Image/NorthAmerica/Mexico.png" alt="Mexico" style="width: 400px; height: 250px;"> 
+          <img src="../Image/NorthAmerica/Mexico.png" alt="Mexico" style="width: 300px; height: 180px;"> 
+        </a>
+      </div>
+      <div class="image-container-h">
+        <a href="./plantovisit.html"  target="_self" class="haiti" id="haiti">
+        <img class ="is-border" src="../Image/NorthAmerica/haiti.jpeg" alt="Haiti Images"style="width: 300px; height: 180px;"> 
       </a>
+        <div class="text-overlay-h">
+            <p><b>HAITI</b></p>
+        </div>
+      </div>
+     
      </div>
     </section>   
 </section>
 
+<style>
+/* styles.css */
+.image-container-h {
+    position: relative; /* Create a relative positioning context for the child elements */
+     /* Set the width of the container as needed */
+    text-align: center; /* Center the text horizontally */
+   
+}
+
+.is-border {
+     /* Make the image responsive within its container */
+     /* Maintain aspect ratio */
+   
+    border: 3px solid #000;;
+    
+    
+}
+
+.text-overlay-h {
+    position: absolute; /* Position the text absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text within its container */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a background color to make text more readable */
+    padding-left: 74px; /* Add padding to the text */
+    padding-right: 74px;
+}
+
+.text-overlay-h p {
+    /* Remove default margin */
+    font-size: 45px; /* Set the font size as needed */
+    color: blue; /* Set text color */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+</style>
 <div class="table-of-contents">
         
-        
-  <h2>Table of Contents</h2>
   <ul class="grid-container">
-    <li data-order="asc">
-      <span class="toggle-btn"><i class="bi bi-caret-down-square"></i></span>
+    <li data-order="asc">   
+  <span class="toggle-btn"><i class="bi bi-caret-down-square"></i><b style="color: lightpink; "> <i> North America - Table of Contents </i></b> <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"></span>
+ <br>
+     
       
-        <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"><br>
-        <i class="bi bi-card-list" ></i> <b>List of North America Country Name</b>
-      <span class="toggle-btn1"><i class="bi bi-sort-down"></i></span>
-      <ul class="sub-menu" id="country-list">
         
-       
-  <li><a href="#unitedstates"> United States of america</a></li>
-  <li><a href="#timessquare">Canada</a></li>
-  <li><a href="#wtc">Mexico</a></li>
-  <li><a href="#brooklynbridge">Cuba</a></li>
-  <li><a href="#vessel">Haiti</a></li>
-  <li><a href="#edge">Jamaica</a></li>
-  <li><a href="#empirestate3">Panama</a></li>
-  <li><a href="#centralpark">EL Salvador</a></li>
-  <li><a href="#rooseveltisland">Dominican Republic</a></li>
-  <li><a href="#tramway">Costa Rica</a></li>
-  <li><a href="#coronapark"> Bahamas</a></li>
-  <li><a href="#tramway">Antigua and Barbuda</a></li>
+  <ul class="sub-menu" id="country-list">       
+  <li><a href="./NorthAmerica/USA/usa.html"> United States of america</a></li>
+  <li><a href="./NorthAmerica/Canada/canada-main.html">Canada</a></li>
+  <li><a href="./plantovisit.html">Mexico</a></li>
+  <li><a href="./plantovisit.html">Cuba</a></li>
+  <li><a href="./plantovisit.html">Haiti</a></li>
 
-  <li><a href="#crotonpark">Barbados</a></li>
-  <li><a href="#bearmountain">Belize</a></li>
-  <li><a href="#gorgelake">Dominica</a></li>
+  <li><a href="./plantovisit.html">Jamaica</a></li>
+  <li><a href="./plantovisit.html">Panama</a></li>
+  <li><a href="./plantovisit.html">EL Salvador</a></li>
+  <li><a href="./plantovisit.html">Dominican Republic</a></li>
+  <li><a href="./plantovisit.html">Costa Rica</a></li>
 
-  <li><a href="#place13">Trinidad and Tobago</a></li>
-  <li><a href="#place14">Saint Vincent and the Grenadines
-  </a></li>
-  <li><a href="#place15">Saint Lucia</a></li>
+  <li><a href="./plantovisit.html"> Bahamas</a></li>
+  <li><a href="./plantovisit.html">Antigua and Barbuda</a></li>
+  <li><a href="./plantovisit.html">Barbados</a></li>
+  <li><a href="./plantovisit.html">Belize</a></li>
+  <li><a href="./plantovisit.html">Dominica</a></li>
 
-  <li><a href="#place16">Saint Kitts and Nevis</a></li>
-  <li><a href="#place17">Nicaragua</a></li>
-  <li><a href="#place18">Honduras</a></li>
-  <li><a href="#place18">Grenada</a></li>
-  <li><a href="#place18">Honduras</a></li>
+  <li><a href="./plantovisit.html">Trinidad and Tobago</a></li>
+  <li><a href="./plantovisit.html">Saint Vincent and the Grenadines</a></li>
+  <li><a href="./plantovisit.html">Saint Lucia</a></li>
+  <li><a href="./plantovisit.html">Saint Kitts and Nevis</a></li>
+  <li><a href="./plantovisit.html">Nicaragua</a></li>
+
+  <li><a href="./plantovisit.html">Honduras</a></li>
+  <li><a href="./plantovisit.html">Grenada</a></li>
+  <li><a href="./plantovisit.html">Honduras</a></li>
   
       </ul>
     </li>
@@ -253,75 +302,74 @@
       <div class="table-of-contents">
         
         
-        <h2>Table of Contents</h2>
+        
         <ul class="grid-container">
           <li data-order="asc">
-            <span class="toggle-btn"><i class="bi bi-caret-down-square"></i></span>
+            <span class="toggle-btn"><i class="bi bi-caret-down-square"></i><b style="color: lightpink; "> <i> Asia - Table of Contents </i></b> </span>
+
             
-          <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"><br>
-          <i class="bi bi-card-list" ></i> <b>List of North America Country Name</b>
-        <span class="toggle-btn1"><i class="bi bi-sort-down"></i></span>
+         
         <ul class="sub-menu" id="country-list">
               
              
-          <li><a href="../Blog/ASIA/Nepal/nepalvisit.html" target="_self"> Nepal </a></li>
-        <li><a href="#timessquare"> India </a></li>
-        <li><a href="#wtc"> Bangladesh</a></li>
-        <li><a href="#brooklynbridge">Pakistan</a></li>
-        <li><a href="#vessel">Indonesia</a></li>
+        <li>1. <a href="../Blog/ASIA/Nepal/nepalvisit.html" target="_self">  Nepal </a></li>
+        <li>2. <a href="../Blog/ASIA/India/indiavisit.html"> India </a></li>
+        <li>3. <a href="./plantovisit.html"> Bangladesh</a></li>
+        <li>4. <a href="./plantovisit.html">Pakistan</a></li>
+        <li>5. <a href="./plantovisit.html">Indonesia</a></li>
 
-        <li><a href="#edge">Japan</a></li>
-        <li><a href="#empirestate3">Philippines</a></li>
-        <li><a href="#centralpark">Vietnam</a></li>
-        <li><a href="#place18">Jordan</a></li>
-        <li><a href="#place18">Azebaijan</a></li>
+        <li>6. <a href="./plantovisit.html">Japan</a></li>
+        <li>7. <a href="./plantovisit.html">Philippines</a></li>
+        <li>8. <a href="./plantovisit.html">Vietnam</a></li>
+        <li>9. <a href="./plantovisit.html">Jordan</a></li>
+        <li>10. <a href="./plantovisit.html">Azebaijan</a></li>
        
 
-        <li><a href="#crotonpark"> South Korea</a></li>
-        <li><a href="#bearmountain"> Iraq</a></li>
-        <li><a href="#gorgelake">Afghanistan</a></li>
-        <li><a href="#tramway"> Myanmar</a></li>
-        <li><a href="#place13"> Saudi Arabia</a></li>
+        <li>11. <a href="./plantovisit.html"> South Korea</a></li>
+        <li>12. <a href="./plantovisit.html"> Iraq</a></li>
+        <li>13. <a href="./plantovisit.html">Afghanistan</a></li>
+        <li>14. <a href="./plantovisit.html"> Myanmar</a></li>
+        <li>15. <a href="./plantovisit.html"> Saudi Arabia</a></li>
 
-        <li><a href="#place14">Uzbekistan</a></li>
-        <li><a href="#place15">North Korea</a></li>
-        <li><a href="#rooseveltisland">Iran</a></li>
-        <li><a href="#tramway">Turkey</a></li>
-        <li><a href="#coronapark"> Thailand</a></li>
+        <li>16. <a href="./plantovisit.html">Uzbekistan</a></li>
+        <li>17. <a href="./plantovisit.html">North Korea</a></li>
+        <li>18. <a href="./plantovisit.html">Iran</a></li>
+        <li>19. <a href="./plantovisit.html">Turkey</a></li>
+        <li>20. <a href="./plantovisit.html"> Thailand</a></li>
 
-        <li><a href="#place16">South Korea</a></li>
-        <li><a href="#place17">Syria</a></li>
-        <li><a href="#place18">Srilanka</a></li>
-        <li><a href="#place18">Kazakhstan</a></li>
-        <li><a href="#place18">Cambodia</a></li>
+        <li>21. <a href="./plantovisit.html">South Korea</a></li>
+        <li>22. <a href="./plantovisit.html">Syria</a></li>
+        <li>23. <a href="./plantovisit.html">Srilanka</a></li>
+        <li>24. <a href="./plantovisit.html">Kazakhstan</a></li>
+        <li>25. <a href="./plantovisit.html">Cambodia</a></li>
 
-        <li><a href="#place18">United Arab Emirates (Dubai)</a></li>
-        <li><a href="#place18">Israel</a></li>
-        <li><a href="#place18">Loas</a></li>
-        <li><a href="#place18">Kyrgyzstan</a></li>
-        <li><a href="#place18">Turkmenistan</a></li>
+        <li>26. <a href="./plantovisit.html">United Arab Emirates (Dubai)</a></li>
+        <li>27. <a href="./plantovisit.html">Israel</a></li>
+        <li>28. <a href="./plantovisit.html">Loas</a></li>
+        <li>29. <a href="./plantovisit.html">Kyrgyzstan</a></li>
+        <li>30. <a href="./plantovisit.html">Turkmenistan</a></li>
 
-        <li><a href="#place18">Singapore</a></li>
-        <li><a href="#place18">Lebanon</a></li>
-        <li><a href="#place18">Kuwait</a></li>
-        <li><a href="#place18">Georgia</a></li>
-        <li><a href="#place18">Qatar</a></li>
+        <li>31. <a href="./plantovisit.html">Singapore</a></li>
+        <li>32. <a href="./plantovisit.html">Lebanon</a></li>
+        <li>33. <a href="./plantovisit.html">Kuwait</a></li>
+        <li>34. <a href="./plantovisit.html">Georgia</a></li>
+        <li>35. <a href="./plantovisit.html">Qatar</a></li>
 
-        <li><a href="#place18">State of Palestine</a></li>
-        <li><a href="#place18">Oman</a></li>
-        <li><a href="#place18">Mongolia</a></li>
-        <li><a href="#place18">Armenia</a></li>
-        <li><a href="#place18">Bahrain</a></li>
+        <li>36. <a href="./plantovisit.html">State of Palestine</a></li>
+        <li>37. <a href="./plantovisit.html">Oman</a></li>
+        <li>38. <a href="./plantovisit.html">Mongolia</a></li>
+        <li>39. <a href="./plantovisit.html">Armenia</a></li>
+        <li>40. <a href="./plantovisit.html">Bahrain</a></li>
 
-        <li><a href="#place18">Cyprus</a></li>
-        <li><a href="#place18">Bhutan</a></li>
-        <li><a href="#place18">Maldives</a></li>
-        <li><a href="#place18">Brunei</a></li>
-        <li><a href="#place18">Timor - Leste</a></li>
+        <li>41. <a href="./plantovisit.html">Cyprus</a></li>
+        <li>42. <a href="./plantovisit.html">Bhutan</a></li>
+        <li>43. <a href="./plantovisit.html">Maldives</a></li>
+        <li>44. <a href="./plantovisit.html">Brunei</a></li>
+        <li>45. <a href="./plantovisit.html">Timor - Leste</a></li>
 
-        <li><a href="#place18">China</a></li>
-        <li><a href="#place18"></a></li>
-        <li><a href="#place18"></a></li>
+        <li>46. <a href="./plantovisit.html">China</a></li>
+        <li>47. <a href="./plantovisit.html"></a></li>
+        <li>48. <a href="./plantovisit.html"></a></li>
         
             </ul>
           </li>
@@ -335,23 +383,15 @@
 <section>
       <div class="image-row">
         <a href="../Blog/ASIA/Nepal/nepalvisit.html"  target="_self">
-          <img src="../Image/Asia/Nepal.png" alt="Nepal" style="width: 400px; height: 250px;"> </a>
+          <img src="../Image/Asia/Nepal.png" alt="Nepal" style="width: 300px; height: 180px;"> </a>
           <a href="../Blog/ASIA/India/indiavisit.html"  target="_self">
-          <img src="../Image/Asia/India.png" alt="India" style="width: 400px; height: 250px;"> </a>
+          <img src="../Image/Asia/India.png" alt="India" style="width: 300px; height: 180px;"> </a>
           <a href="./plantovisit.html"  target="_self">
-          <img src="../Image/Asia/Thailand.png" alt="Thailand" style="width: 400px; height: 250px;"> </a>
+          <img src="../Image/Asia/Thailand.png" alt="Thailand" style="width: 300px; height: 180px;"> </a>
+          <a href="./plantovisit.html"  target="_self">
+            <img src="../Image/Asia/Vietnam.png" alt="Vietnam" style="width: 300px; height: 180px;"> </a>
       </div>
    
-      <!-- Second row of images -->
-      <div class="image-row-two">
-        <a href="./plantovisit.html"  target="_self">
-          <img src="../Image/Asia/Mongolia.png" alt="Mongolia" style="width: 400px; height: 250px;"> </a>
-          <a href="./plantovisit.html"  target="_self">
-          <img src="../Image/Asia/Myanmar.png" alt="Myanmar" style="width: 400px; height: 250px;"> </a>
-          <a href="./plantovisit.html"  target="_self">
-          <img src="../Image/Asia/Vietnam.png" alt="Vietnam" style="width: 400px; height: 250px;"> </a>
-      </div>
-    
   </section>
 </section>
 
@@ -375,44 +415,41 @@
     <div class="table-of-contents">
         
         
-      <h2>Table of Contents</h2>
       <ul class="grid-container">
         <li data-order="asc">
-          <span class="toggle-btn"><i class="bi bi-caret-down-square"></i></span>
+          <span class="toggle-btn"><i class="bi bi-caret-down-square"></i><b style="color: lightpink; "> <i> EUROPE - Table of Contents </i></b> </span>
           
-            <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"><br>
-            <i class="bi bi-card-list" ></i> <b>List of North America Country Name</b>
-          <span class="toggle-btn1"><i class="bi bi-sort-down"></i></span>
+          
           <ul class="sub-menu" id="country-list">
             
            
-      <li><a href="#liberty"> United States of america</a></li>
-      <li><a href="#timessquare">Canada</a></li>
-      <li><a href="#wtc">Mexico</a></li>
-      <li><a href="#brooklynbridge">Cuba</a></li>
-      <li><a href="#vessel">Haiti</a></li>
+      <li><a href="./plantovisit.html"> United States of america</a></li>
+      <li><a href="./plantovisit.html">Canada</a></li>
+      <li><a href="./plantovisit.html">Mexico</a></li>
+      <li><a href="./plantovisit.html">Cuba</a></li>
+      <li><a href="./plantovisit.html">Haiti</a></li>
 
-      <li><a href="#edge">Jamaica</a></li>
-      <li><a href="#empirestate3">Panama</a></li>
-      <li><a href="#centralpark">EL Salvador</a></li>
-      <li><a href="#rooseveltisland">Dominican Republic</a></li>
-      <li><a href="#tramway">Costa Rica</a></li>
+      <li><a href="./plantovisit.html">Jamaica</a></li>
+      <li><a href="./plantovisit.html">Panama</a></li>
+      <li><a href="./plantovisit.html">EL Salvador</a></li>
+      <li><a href="./plantovisit.html">Dominican Republic</a></li>
+      <li><a href="./plantovisit.html">Costa Rica</a></li>
 
-      <li><a href="#coronapark"> Bahamas</a></li>
-      <li><a href="#tramway">Antigua and Barbuda</a></li>
-      <li><a href="#crotonpark">Barbados</a></li>
-      <li><a href="#bearmountain">Belize</a></li>
-      <li><a href="#gorgelake">Dominica</a></li>
+      <li><a href="./plantovisit.html"> Bahamas</a></li>
+      <li><a href="./plantovisit.html">Antigua and Barbuda</a></li>
+      <li><a href="./plantovisit.html">Barbados</a></li>
+      <li><a href="./plantovisit.html">Belize</a></li>
+      <li><a href="./plantovisit.html">Dominica</a></li>
 
-      <li><a href="#place13">Trinidad and Tobago</a></li>
-      <li><a href="#place14">Saint Vincent and the Grenadines</a></li>
-      <li><a href="#place15">Saint Lucia</a></li>
-      <li><a href="#place16">Saint Kitts and Nevis</a></li>
-      <li><a href="#place17">Nicaragua</a></li>
+      <li><a href="./plantovisit.html">Trinidad and Tobago</a></li>
+      <li><a href="./plantovisit.html">Saint Vincent and the Grenadines</a></li>
+      <li><a href="./plantovisit.html">Saint Lucia</a></li>
+      <li><a href="./plantovisit.html">Saint Kitts and Nevis</a></li>
+      <li><a href="./plantovisit.html">Nicaragua</a></li>
 
-      <li><a href="#place18">Honduras</a></li>
-      <li><a href="#place18">Grenada</a></li>
-      <li><a href="#place18">Honduras</a></li>
+      <li><a href="./plantovisit.html">Honduras</a></li>
+      <li><a href="./plantovisit.html">Grenada</a></li>
+      <li><a href="./plantovisit.html">Honduras</a></li>
       
           </ul>
         </li>
@@ -427,19 +464,13 @@
     
       <div class="image-row">
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Turkey.png" alt="USA" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/Europe/Turkey.png" alt="USA" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Iceland.png" alt="New York" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/Europe/Iceland.png" alt="New York" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Portgal.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
-      </div>
-      <div class="image-row-two">
+        <img src="../Image/Europe/Portgal.png" alt="Mexico" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Spain.png" alt="USA" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Malta.png" alt="New York" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Europe/Belgium.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
+          <img src="../Image/Europe/Spain.png" alt="USA" style="width: 300px; height: 180px;"> </a>
       </div>
         
   </section>
@@ -464,44 +495,41 @@
         <div class="table-of-contents">
         
         
-          <h2>Table of Contents</h2>
+          
           <ul class="grid-container">
             <li data-order="asc">
-              <span class="toggle-btn"><i class="bi bi-caret-down-square"></i></span>
-              
-                <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"><br>
-                <i class="bi bi-card-list" ></i> <b>List of North America Country Name</b>
-              <span class="toggle-btn1"><i class="bi bi-sort-down"></i></span>
+              <span class="toggle-btn"><i class="bi bi-caret-down-square"></i><b style="color: lightpink; "> <i> Latin America - Table of Contents </i></b> </span>
+
               <ul class="sub-menu" id="country-list">
                 
                
-            <li><a href="#liberty"> United States of america</a></li>
-          <li><a href="#timessquare">Canada</a></li>
-          <li><a href="#wtc">Mexico</a></li>
-          <li><a href="#brooklynbridge">Cuba</a></li>
-          <li><a href="#vessel">Haiti</a></li>
-          <li><a href="#edge">Jamaica</a></li>
-          <li><a href="#empirestate3">Panama</a></li>
-          <li><a href="#centralpark">EL Salvador</a></li>
-          <li><a href="#rooseveltisland">Dominican Republic</a></li>
-          <li><a href="#tramway">Costa Rica</a></li>
-          <li><a href="#coronapark"> Bahamas</a></li>
-          <li><a href="#tramway">Antigua and Barbuda</a></li>
+            <li><a href="./plantovisit.html"> United States of america</a></li>
+          <li><a href="./plantovisit.html">Canada</a></li>
+          <li><a href="./plantovisit.html">Mexico</a></li>
+          <li><a href="./plantovisit.html">Cuba</a></li>
+          <li><a href="./plantovisit.html">Haiti</a></li>
+          <li><a href="./plantovisit.html">Jamaica</a></li>
+          <li><a href="./plantovisit.html">Panama</a></li>
+          <li><a href="./plantovisit.html">EL Salvador</a></li>
+          <li><a href="./plantovisit.html">Dominican Republic</a></li>
+          <li><a href="./plantovisit.html">Costa Rica</a></li>
+          <li><a href="./plantovisit.html"> Bahamas</a></li>
+          <li><a href="./plantovisit.html">Antigua and Barbuda</a></li>
   
-          <li><a href="#crotonpark">Barbados</a></li>
-          <li><a href="#bearmountain">Belize</a></li>
-          <li><a href="#gorgelake">Dominica</a></li>
+          <li><a href="./plantovisit.html">Barbados</a></li>
+          <li><a href="./plantovisit.html">Belize</a></li>
+          <li><a href="./plantovisit.html">Dominica</a></li>
   
-          <li><a href="#place13">Trinidad and Tobago</a></li>
-          <li><a href="#place14">Saint Vincent and the Grenadines
+          <li><a href="./plantovisit.html">Trinidad and Tobago</a></li>
+          <li><a href="./plantovisit.html">Saint Vincent and the Grenadines
           </a></li>
-          <li><a href="#place15">Saint Lucia</a></li>
+          <li><a href="./plantovisit.html">Saint Lucia</a></li>
   
-          <li><a href="#place16">Saint Kitts and Nevis</a></li>
-          <li><a href="#place17">Nicaragua</a></li>
-          <li><a href="#place18">Honduras</a></li>
-          <li><a href="#place18">Grenada</a></li>
-          <li><a href="#place18">Honduras</a></li>
+          <li><a href="./plantovisit.html">Saint Kitts and Nevis</a></li>
+          <li><a href="./plantovisit.html">Nicaragua</a></li>
+          <li><a href="./plantovisit.html">Honduras</a></li>
+          <li><a href="./plantovisit.html">Grenada</a></li>
+          <li><a href="./plantovisit.html">Honduras</a></li>
           
               </ul>
             </li>
@@ -513,20 +541,15 @@
     
       <div class="image-row">
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/Costarica.png" alt="USA" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/LatinAmerica/Costarica.png" alt="USA" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/Cuba.png" alt="New York" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/LatinAmerica/Cuba.png" alt="New York" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/DominicanRepublic.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/LatinAmerica/DominicanRepublic.png" alt="Mexico" style="width: 300px; height: 180px;"> </a>
+        <a href="./plantovisit.html"  target="_self">
+          <img src="../Image/LatinAmerica/Haiti.png" alt="USA" style="width: 300px; height: 180px;"> </a>
       </div>
-      <div class="image-row-two">
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/Haiti.png" alt="USA" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/Mexico.png" alt="New York" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/LatinAmerica/PuertoRico.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
-      </div>    
+       
 </section>
      <!-- ***************************************** Africa Page  *****************************************-->
 
@@ -547,44 +570,41 @@
         <div class="table-of-contents">
         
         
-          <h2>Table of Contents</h2>
+        
           <ul class="grid-container">
             <li data-order="asc">
-              <span class="toggle-btn"><i class="bi bi-caret-down-square"></i></span>
-              
-                <input class="search-box" type="text" id="searchInput" placeholder="Search by Country"><br>
-                <i class="bi bi-card-list" ></i> <b>List of North America Country Name</b>
-              <span class="toggle-btn1"><i class="bi bi-sort-down"></i></span>
+              <span class="toggle-btn"><i class="bi bi-caret-down-square"></i><b style="color: lightpink; "> <i> North America - Table of Contents </i></b></span>
+
               <ul class="sub-menu" id="country-list">
                 
                
-            <li><a href="#liberty"> United States of america</a></li>
-          <li><a href="#timessquare">Canada</a></li>
-          <li><a href="#wtc">Mexico</a></li>
-          <li><a href="#brooklynbridge">Cuba</a></li>
-          <li><a href="#vessel">Haiti</a></li>
-          <li><a href="#edge">Jamaica</a></li>
-          <li><a href="#empirestate3">Panama</a></li>
-          <li><a href="#centralpark">EL Salvador</a></li>
-          <li><a href="#rooseveltisland">Dominican Republic</a></li>
-          <li><a href="#tramway">Costa Rica</a></li>
-          <li><a href="#coronapark"> Bahamas</a></li>
-          <li><a href="#tramway">Antigua and Barbuda</a></li>
+            <li><a href="./plantovisit.html"> United States of america</a></li>
+          <li><a href="./plantovisit.html">Canada</a></li>
+          <li><a href="./plantovisit.html">Mexico</a></li>
+          <li><a href="./plantovisit.html">Cuba</a></li>
+          <li><a href="./plantovisit.html">Haiti</a></li>
+          <li><a href="./plantovisit.html">Jamaica</a></li>
+          <li><a href="./plantovisit.html">Panama</a></li>
+          <li><a href="./plantovisit.html">EL Salvador</a></li>
+          <li><a href="./plantovisit.html">Dominican Republic</a></li>
+          <li><a href="./plantovisit.html">Costa Rica</a></li>
+          <li><a href="./plantovisit.html"> Bahamas</a></li>
+          <li><a href="./plantovisit.html">Antigua and Barbuda</a></li>
   
-          <li><a href="#crotonpark">Barbados</a></li>
-          <li><a href="#bearmountain">Belize</a></li>
-          <li><a href="#gorgelake">Dominica</a></li>
+          <li><a href="./plantovisit.html">Barbados</a></li>
+          <li><a href="./plantovisit.html">Belize</a></li>
+          <li><a href="./plantovisit.html">Dominica</a></li>
   
-          <li><a href="#place13">Trinidad and Tobago</a></li>
-          <li><a href="#place14">Saint Vincent and the Grenadines
+          <li><a href="./plantovisit.html">Trinidad and Tobago</a></li>
+          <li><a href="./plantovisit.html">Saint Vincent and the Grenadines
           </a></li>
-          <li><a href="#place15">Saint Lucia</a></li>
+          <li><a href="./plantovisit.html">Saint Lucia</a></li>
   
-          <li><a href="#place16">Saint Kitts and Nevis</a></li>
-          <li><a href="#place17">Nicaragua</a></li>
-          <li><a href="#place18">Honduras</a></li>
-          <li><a href="#place18">Grenada</a></li>
-          <li><a href="#place18">Honduras</a></li>
+          <li><a href="./plantovisit.html">Saint Kitts and Nevis</a></li>
+          <li><a href="./plantovisit.html">Nicaragua</a></li>
+          <li><a href="./plantovisit.html">Honduras</a></li>
+          <li><a href="./plantovisit.html">Grenada</a></li>
+          <li><a href="./plantovisit.html">Honduras</a></li>
           
               </ul>
             </li>
@@ -594,23 +614,17 @@
 
       <div class="image-row">
         <a href="./plantovisit.html" target="_self">
-        <img src="../Image/Africa/Botswana.png" alt="USA" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/Africa/Botswana.png" alt="USA" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Africa/Morocco.png" alt="New York" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/Africa/Morocco.png" alt="New York" style="width: 300px; height: 180px;"> </a>
         <a href="./plantovisit.html" target="_self">
-        <img src="../Image/Africa/Nambia.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
+        <img src="../Image/Africa/Nambia.png" alt="Mexico" style="width: 300px; height: 180px;"> </a>
+        <a href="./plantovisit.html"  target="_self">
+          <img src="../Image/Africa/Zimbabwe.png" alt="Mexico" style="width: 300px; height: 180px;"> </a>
       </div>
-      <div class="image-row-two">
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Africa/SouthAfrica.png" alt="USA" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Africa/Zamba.png" alt="New York" style="width: 400px; height: 250px;"> </a>
-        <a href="./plantovisit.html"  target="_self">
-        <img src="../Image/Africa/Zimbabwe.png" alt="Mexico" style="width: 400px; height: 250px;"> </a>
-      </div>
+  
    </section>
-   </div>
-  </div>
+ 
   </body>
 <!-- ***************************************** Footer Page  *****************************************-->
     <footer class="footer">

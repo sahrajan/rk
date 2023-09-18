@@ -94,23 +94,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+const countryList = document.getElementById("country-list");
+// Get all the list items within the container
+const countryItems = countryList.getElementsByTagName("li");
 
-
- // Get the parent container for the list items
- const countryList = document.getElementById("country-list");
-    
- // Get all the list items within the container
- const countryItems = countryList.getElementsByTagName("li");
-
- // Loop through the list items and add numbers
- for (let i = 0; i < countryItems.length; i++) {
-     const countryName = countryItems[i].querySelector("a").textContent;
-     countryItems[i].querySelector("a").textContent = (i + 1) + ". " +" " + countryName;
- }
-
-
-
-
+// Loop through the list items and add numbers
+for (let i = 0; i < countryItems.length; i++) {
+    const countryName = countryItems[i].querySelector("a").textContent;
+    countryItems[i].querySelector("a").textContent = (i + 1) + ". " +" " + countryName;
+}
 
 
 //  NOT WORKING THE BELOW CODE NEED TO FIX IT

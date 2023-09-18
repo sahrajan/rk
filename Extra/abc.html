@@ -3,20 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Pagination Example</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="./contact.php" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-        <button type="submit">Submit</button>
-    </form>
+    <div class="content">
+        <!-- Content for Page 1 -->
+        <div class="page" id="page1">
+            <h1>Page 1</h1>
+            <p>This is the content for Page 1.</p>
+        </div>
+
+        <!-- Content for Page 2 -->
+        <div class="page" id="page2">
+            <h1>Page 2</h1>
+            <p>This is the content for Page 2.</p>
+        </div>
+
+        <!-- Content for Page 3 -->
+        <div class="page" id="page3">
+            <h1>Page 3</h1>
+            <p>This is the content for Page 3.</p>
+        </div>
+
+        <!-- Add more pages as needed -->
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button onclick="showPage(1)">1</button>
+            <button onclick="showPage(2)">2</button>
+            <button onclick="showPage(3)">3</button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+<style>
+    /* Styles for the content */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+/* Styles for the pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Show the first page by default
+    showPage(1);
+});
+
+function showPage(pageNum) {
+    // Hide all pages
+    var pages = document.querySelectorAll(".page");
+    pages.forEach(function (page) {
+        page.style.display = "none";
+    });
+
+    // Show the selected page
+    var selectedPage = document.getElementById("page" + pageNum);
+    if (selectedPage) {
+        selectedPage.style.display = "block";
+    }
+}
+
+</script>
 </html>
