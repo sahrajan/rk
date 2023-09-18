@@ -6,10 +6,10 @@
       font-size: 8px; /* Reduce font size */
     }
     .navbar a{
-        font-size: 10px; /* Reduce font size */
+        font-size: 20px; /* Reduce font size */
         margin-left: 10px;
         text-align: center;
-        margin-top: 2px;
+        margin-top: -11px;
       }
 
     .social-icons a{
@@ -270,7 +270,7 @@ body {
         font-size: 12px; /* Further reduce font size */
       }
   
-      .navbar {
+      .navbar a{
         font-size: 12px; /* Further reduce font size */
       }
 
@@ -327,8 +327,8 @@ body {
       max-width: 100%;
       margin-top: 100px;
       margin-left: 2px;
-      
       } 
+
       .image1-row {
         width: 100%; /* Make images responsive */
         height: auto;
@@ -339,15 +339,28 @@ body {
         margin-left: 2px;
     }
 
-    
+    .image-row {
+      width: 100%; /* Make images responsive */
+      height: auto;
+      display: block;
+      margin-bottom: 10px; /* Add spacing between images */
+      margin: 10px auto;
+      max-width: 100%;
+      margin-left: 2px;
+  }
 
-      #main {
-        overflow: visible !important;
-        align-items: center;
-        margin-top: 30px;
-        margin-right: 10px;
-        margin-left: 10px;
-        
+    .table-of-contents{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+     .travel-image{
+      width: 100px;
+height: 0px;
+     }
+
+      .northamerica{
+        margin-top: 20px;
       }
       
     }
